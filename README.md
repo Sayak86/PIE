@@ -59,6 +59,7 @@ We propose a hybrid solution together with an AI powered agent and a determinist
   #### AI:
 
   ### 3.2  Interaction Pattern
+
   ```mermaid
 flowchart LR
   app((app.py))
