@@ -1,0 +1,37 @@
+[
+  {
+    "name": "goal",
+    "display_name": "Investment Goal",
+    "description": "User's primary reason for investing (e.g., retirement, growth, passive income)."
+  },
+  {
+    "name": "horizon",
+    "display_name": "Investment Horizon",
+    "description": "How long the user plans to stay invested (short, medium, long-term)."
+  },
+  {
+    "name": "risk_appetite",
+    "display_name": "Risk Appetite",
+    "description": "User’s willingness to take financial risk (Low, Moderate, High)."
+  },
+  {
+    "name": "loss_tolerance",
+    "display_name": "Loss Tolerance",
+    "description": "User’s emotional and behavioral response to investment losses."
+  },
+  {
+    "name": "knowledge_level",
+    "display_name": "Investment Knowledge",
+    "description": "User’s self-assessed experience and understanding of investing."
+  },
+  {
+    "name": "return_expectation",
+    "display_name": "Return Expectations",
+    "description": "Expected annual return from the investment (e.g., 5%, 10%, 15%)."
+  },
+  {
+    "name": "liquidity_needs",
+    "display_name": "Liquidity Needs",
+    "description": "Whether the user needs quick access to invested money or can stay locked in."
+  }
+]
