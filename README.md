@@ -44,4 +44,59 @@ We propose a hybrid solution together with an AI powered agent and a determinist
  
  - Explainability
      - The core rule is not influenced by AI and stays as a business rule
-     - LLM always generates the Why part while extracting the risk classying parameters. And the LLM explanations are part of the response MAP.     
+     - LLM always generates the Why part while extracting the risk classying parameters. And the LLM explanations are part of the response MAP.
+  
+  ## 3. Implementation Approach
+  We intend to create aan application that can be channel agnostic and seamleassley used in both mobile and web. 
+  
+  ### 3.1. Technology Stack Used
+  #### Frontend:
+
+  #### Backend:
+
+  #### Data staorage:
+
+  #### AI:
+
+  ### 3.2  Interaction Pattern
+  ```mermaid
+flowchart LR
+  app((app.py))
+  loader[[Data_loader.py]]
+  master_data([load_investor_master])
+  asset_allocation([load_asset_allocation])
+  trade_history([load_trade_history])
+  position_details([load_open_positions])
+  interaction_details([load_interaction_details])
+  consolidated_investor_profile([set_consolidated_investor_profile])
+  summarize[[summarize.py]]
+  summarize_demography([get_summarize_master])
+  summarize_asset_allocation([get_summarize_asset_allocation])
+  summarize_trade_history([get_summarize_trade_history])
+  summarize_position_details([get_summarize_position_details])
+  summarize_interaction_details([get_summarize_interaction_details])
+  consolidated_summarized_profile([set_consolidated_summarized_profile])
+
+
+  app --> loader
+  loader-->consolidated_investor_profile
+  consolidated_investor_profile -->master_data
+  consolidated_investor_profile -->asset_allocation
+  consolidated_investor_profile -->trade_history
+  consolidated_investor_profile-->position_details
+  consolidated_investor_profile-->interaction_details
+  app --> summarize
+  summarize -->consolidated_summarized_profile
+  consolidated_summarized_profile-->summarize_demography
+  consolidated_summarized_profile-->summarize_asset_allocation
+  consolidated_summarized_profile-->summarize_trade_history
+  consolidated_summarized_profile-->summarize_position_details
+  consolidated_summarized_profile-->summarize_interaction_details
+  
+
+```
+
+
+
+  
+
