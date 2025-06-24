@@ -77,6 +77,10 @@ flowchart LR
   summarize_position_details([get_summarize_position_details])
   summarize_interaction_details([get_summarize_interaction_details])
   consolidated_summarized_profile([set_consolidated_summarized_profile])
+  agent_setup[[agent_setup.py]]
+  tool_register[goal_tool, risk_tool]
+  main_agent([create_main_agent])
+  run_agent([execute_agent])
 
 
   app --> loader
@@ -93,6 +97,11 @@ flowchart LR
   consolidated_summarized_profile-->summarize_trade_history
   consolidated_summarized_profile-->summarize_position_details
   consolidated_summarized_profile-->summarize_interaction_details
+  app -->agent_setup
+  agent_setup -->tool_register
+  tool_register -->main_agent
+  app -->run_agent
+  
   
 
 ```

@@ -1,0 +1,8 @@
+{
+  "llm_model": "gpt-4",
+  "llm_temperature": 0.3,
+  "max_turns_per_tool": 5,
+  "tool_response_timeout_seconds": 20,
+  "enable_visual_explanation": true,
+  "default_profile_summary": "User is a 40-year-old working professional with moderate trading history and diverse portfolio."
+}
