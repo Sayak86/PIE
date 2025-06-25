@@ -1,0 +1,6 @@
+customer_id,accounts,total_balance,product_types
+C001,3,1200000,"Equity,MF"
+C002,2,800000,"Debt,FD"
+C003,4,1500000,"Equity,Options"
+C004,1,500000,"FD,MF"
+C005,5,2000000,"MF,Equity,Bonds"

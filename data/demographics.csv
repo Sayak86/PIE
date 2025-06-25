@@ -1,0 +1,6 @@
+customer_id,name,age,sex,profession,marital_status
+C001,John Doe,42,M,Engineer,Married
+C002,Alice Smith,35,F,Doctor,Single
+C003,Bob Lee,29,M,Trader,Single
+C004,Maria Garcia,51,F,Teacher,Married
+C005,David Kim,38,M,Entrepreneur,Divorced

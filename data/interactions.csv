@@ -1,0 +1,6 @@
+customer_id,logins_per_week,avg_session_duration_min,asset_checks_per_session,mobile_app_usage_pct
+C001,4,15,3,0.7
+C002,1,5,1,0.5
+C003,7,20,5,0.9
+C004,1,4,1,0.4
+C005,5,18,4,0.8

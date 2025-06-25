@@ -1,0 +1,6 @@
+customer_id,avg_holding_duration_days,open_positions,closed_positions,volatility_level
+C001,180,5,15,Medium
+C002,365,3,7,Low
+C003,90,10,20,High
+C004,540,2,5,Low
+C005,120,8,12,Medium

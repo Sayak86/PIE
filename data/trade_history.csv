@@ -1,0 +1,6 @@
+customer_id,trades_per_month,avg_trade_volume,profit_loss_trend,loss_reaction,uses_stop_loss
+C001,8,10000,Positive,Holds,True
+C002,2,2000,Stable,Panics,False
+C003,15,50000,Volatile,Trades more,True
+C004,1,1000,Stable,Holds,False
+C005,10,25000,Positive,Hedges,True

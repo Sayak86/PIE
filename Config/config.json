@@ -4,5 +4,13 @@
   "max_turns_per_tool": 5,
   "tool_response_timeout_seconds": 20,
   "enable_visual_explanation": true,
-  "default_profile_summary": "User is a 40-year-old working professional with moderate trading history and diverse portfolio."
+  "default_profile_summary": "User is a 40-year-old working professional with moderate trading history and diverse portfolio.",
+  "customer_profile_segments" : {
+    "asset_allocation":"asset_allocation.csv",
+    "trade_history":"trade_history.csv",
+    "demographics":"demographics.csv",
+    "interactions":"interactions.csv",
+    "portfolio":"portfolio.csv",
+    "positions":"positions.csv"
+  }
 }

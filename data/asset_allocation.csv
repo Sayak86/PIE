@@ -1,0 +1,6 @@
+customer_id,equity_pct,bond_pct,fx_pct,futures_options_pct,govt_instruments_pct,commodities_pct
+C001,0.6,0.3,0.05,0.02,0.03,0.0
+C002,0.2,0.5,0.1,0.0,0.2,0.0
+C003,0.8,0.1,0.05,0.03,0.02,0.0
+C004,0.1,0.6,0.1,0.0,0.2,0.0
+C005,0.5,0.3,0.1,0.05,0.05,0.0
