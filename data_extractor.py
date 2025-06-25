@@ -122,7 +122,7 @@ class data_loader:
         return profile      
 
 
-# Example usage
+# Function that will be exposed through FastAPI
 def get_consolidated_investor_profile(customer_id):
     """
     Function to get the consolidated investor profile for a given customer ID.
@@ -136,6 +136,5 @@ def get_consolidated_investor_profile(customer_id):
     loader = data_loader(customer_id)
     logging.info(f"Loading consolidated investor profile for customer {customer_id}")
     return loader.set_consolidated_investor_profile()
-
 
     

@@ -1,7 +1,8 @@
 # It loads the config.json and exposes the configuration as a dictionary.
 import json
 import os
-def load_config(config_path='config/config.json'):
+
+def load_config(config_path='Config/config.json'):
     """
     Loads the configuration from a JSON file.
     
@@ -18,3 +19,4 @@ def load_config(config_path='config/config.json'):
         config = json.load(file)
     
     return config
+
