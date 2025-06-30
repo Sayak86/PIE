@@ -43,15 +43,30 @@ Summary:
 """)
 
 def summarize_section(section_name: str, section_data: dict) -> str:
+    """
+    Summarizes a single section of customer data using the LLM.
+    Returns only the text content, not the full AIMessage object.
+    """
     chain = summary_template | llm
-    return chain.invoke({"section_name": section_name, "section_data": section_data})
+    response = chain.invoke({"section_name": section_name, "section_data": section_data})
+    
+    # Debug: Print the response type to understand what we're getting
+    print(f"Response type: {type(response)}")
+    print(f"Response content: {response.content if hasattr(response, 'content') else 'No content attribute'}")
+    
+    # Extract just the content from the LangChain response
+    if hasattr(response, 'content'):
+        return response.content
+    else:
+        return str(response)
 
 def summarize_all_sections(consolidated_profile: dict) -> dict:
     summary_output = {}
     for section, data in consolidated_profile.items():
+        summary = summarize_section(section, data)
         summary_output[section] = {
             "raw": data,
-            "summary": summarize_section(section, data)
+            "summary": summary
         }
     return summary_output
 
@@ -63,7 +78,8 @@ def summarize_investor_profile(customer_id: str):
     """
     profile = get_consolidated_investor_profile(customer_id)
     summaries = summarize_all_sections(profile)
+    return summaries 
 
-    for k, v in summaries.items():
-        summary_text += f"\n--- {k.upper()} ---\n{v['summary']}\n"
-    return summary_text.strip()
+    # for k, v in summaries.items():
+    #     summary_text += f"\n--- {k.upper()} ---\n{v['summary']} ---{v['raw']}\n"
+    # return summary_text.strip()
