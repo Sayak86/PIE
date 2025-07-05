@@ -60,6 +60,27 @@ We propose a hybrid solution together with an AI powered agent and a determinist
 
   ### 3.2  Interaction Pattern
 
+  Each chatbot tool (e.g., run_goal_chatbot) must:
+
+  1. Track the conversation using Nucleus’s conversation ID
+
+  2. Parse each response to check if:
+
+      Value is extracted (non-null, valid type)
+      Reasoning is included
+
+  3.  Loop until:
+
+        Valid structured response is received
+        Or max retries reached (max_turns from config.json)
+
+  4.  Return final output as:
+
+        {
+          "value": "Long-term capital appreciation",
+          "reasoning": "Customer wants to build wealth over 10+ years and is comfortable with moderate losses"
+        }
+
   ```mermaid
 flowchart LR
   app((app.py))
@@ -105,6 +126,7 @@ flowchart LR
   
 
 ```
+
 
 
 
