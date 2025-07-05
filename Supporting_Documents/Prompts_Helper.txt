@@ -1,0 +1,75 @@
+1. Goal & Horizon Clarifier Chatbot
+Parameters:
+
+Investment Objective (Preservation vs. Appreciation)
+
+Investment Horizon
+
+Reference Currency
+
+Prompt Goal:
+Guide the user with relatable goals (e.g., saving for a child’s education vs. growing wealth), clarify holding period with calendar-based examples, and help choose a reference currency.
+
+2. Risk Capacity Calculator Chatbot
+Parameters:
+
+Investable Assets (A1)
+
+Liabilities & Expenses (A2)
+
+Free Asset Ratio (A3)
+
+Prompt Goal:
+Use analogies like "money you can sleep without worrying" or "cash you won’t touch for 5 years" to explain free asset ratio. Include simple calculator visuals (e.g., slider bars or stacked bars).
+
+3. Risk Willingness Profiler Chatbot
+Parameters:
+
+Risk Appetite
+
+Willingness to bear loss (max drawdown)
+
+Tolerance for volatility
+
+Past reactions to market downturns
+
+Prompt Goal:
+Help the user reflect on emotional and psychological tolerance using storytelling ("When markets dipped 20% in COVID, what would you do?"). Include line chart or red/green gauges.
+
+4. Product Experience Analyzer Chatbot
+Parameters:
+
+FX/Precious Metals experience
+
+Funds / ETFs / Alternatives experience
+
+Option trades, ELNs, structured products
+
+Whether they are Knowledgeable or Experienced
+
+Prompt Goal:
+Use gamified quiz-like prompts: “Have you ever traded currency pairs like USD/EUR?”, or “Have you placed more than 10 mutual fund orders in the last 2 years?” Include yes/no + examples.
+
+5. Loss Mitigation Strength Evaluator Chatbot
+Parameters:
+
+Historical portfolio recovery behavior
+
+Willingness to hold during drawdown
+
+Reliance on invested assets for lifestyle
+
+Prompt Goal:
+Use story-like intros: “If your investment drops 20%, do you...” with multiple options. Guide user toward reflection with examples of past crises (2008, COVID, etc.).
+
+6. Knowledge & Guidance Needs Chatbot
+Parameters:
+
+Confidence level in investing
+
+Areas where education is needed
+
+Comfort with decision-making
+
+Prompt Goal:
+Ask: “Would you like to explore topics in simple words?”, “What makes you uncomfortable in investing?”. Offer charts and tools on-demand.

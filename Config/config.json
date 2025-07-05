@@ -12,5 +12,7 @@
     "interactions":"interactions.csv",
     "portfolio":"portfolio.csv",
     "positions":"positions.csv"
-  }
+  },
+  "nucleus_api_url": "https://api.nucleus.com/v1/chat",
+  "nucleus_api_key": "your_nucleus_api_key_here"
 }
